@@ -65,6 +65,10 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             transition: transform 0.2s ease;
         }
+.certificate-link {
+    display: inline-block; /* clave */
+    line-height: 0;        /* elimina espacio fantasma */
+}
 
         .certificate-preview:hover {
             transform: scale(1.02);
@@ -178,11 +182,10 @@
             <p>Año: 2024</p>
 
             <a href="JAVA_-_Certificacin.pdf" target="_blank">
-                <img
-                    src="JAVA_-_Certificacin.jpg"
-                    alt="Certificado Java"
-                    class="certificate-preview">
-            </a>
+           <a href="java_certificado.pdf" target="_blank" class="certificate-link">
+    <img src="java_certificado.jpg" class="certificate-preview">
+</a>
+
         </div>
 
         <div class="certificate">
@@ -203,6 +206,7 @@
 
 </body>
 </html>
+
 
 
 
