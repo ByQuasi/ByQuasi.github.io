@@ -20,7 +20,7 @@
             text-align: center;
         }
 
-        /* ===== PROYECTOS ===== */
+        /* ===== CONTENEDORES ===== */
         .container {
             padding: 20px;
             display: grid;
@@ -35,11 +35,11 @@
             padding: 15px;
         }
 
-        .project h3, .certificate h3 {
+        h3 {
             margin-top: 0;
         }
 
-        .project iframe {
+        iframe {
             max-width: 100%;
             border-radius: 5px;
             display: block;
@@ -56,12 +56,18 @@
             margin-bottom: 20px;
         }
 
-        .pdf-preview {
+        .certificate-preview {
             width: 100%;
-            height: 280px; /* tamaño PREVIEW */
-            border: none;
-            border-radius: 6px;
-            margin-top: 10px;
+            max-height: 280px;
+            object-fit: contain;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease;
+        }
+
+        .certificate-preview:hover {
+            transform: scale(1.02);
         }
 
         a {
@@ -171,16 +177,12 @@
             <p>Emitido por: Plataforma X</p>
             <p>Año: 2024</p>
 
-            <iframe
-                src="JAVA_-_Certificacin.pdf"
-                class="pdf-preview">
-            </iframe>
-
-            <p>
-                <a href="JAVA_-_Certificacin.pdf" target="_blank">
-                    Abrir certificado completo
-                </a>
-            </p>
+            <a href="JAVA_-_Certificacin.pdf" target="_blank">
+                <img
+                    src="JAVA_-_Certificacin.jpg"
+                    alt="Certificado Java"
+                    class="certificate-preview">
+            </a>
         </div>
 
         <div class="certificate">
@@ -188,16 +190,12 @@
             <p>Emitido por: Plataforma Y</p>
             <p>Año: 2023</p>
 
-            <iframe
-                src="certificado-backend.pdf"
-                class="pdf-preview">
-            </iframe>
-
-            <p>
-                <a href="certificado-backend.pdf" target="_blank">
-                    Abrir certificado completo
-                </a>
-            </p>
+            <a href="certificado-backend.pdf" target="_blank">
+                <img
+                    src="certificado-backend.jpg"
+                    alt="Certificado Backend"
+                    class="certificate-preview">
+            </a>
         </div>
 
     </div>
@@ -205,10 +203,6 @@
 
 </body>
 </html>
-
-
-
-
 
 
 
