@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,11 @@
         header {
             background-color: #0073e6;
             color: white;
-            padding: 15px;
+            padding: 10px 20px;
             text-align: center;
         }
 
+        /* ===== PROYECTOS ===== */
         .container {
             padding: 20px;
             display: grid;
@@ -27,44 +28,45 @@
             gap: 20px;
         }
 
-        .project {
+        .project, .certificate {
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 15px;
         }
 
+        .project h3, .certificate h3 {
+            margin-top: 0;
+        }
+
         .project iframe {
-            width: 100%;
-            height: 315px;
-            border-radius: 8px;
+            max-width: 100%;
+            border-radius: 5px;
+            display: block;
             margin-bottom: 10px;
         }
 
-        /* 🔥 PREVIEW DE CERTIFICADO */
-        .certificate-img {
-            max-width: 500px;   /* 👈 tamaño real */
-            width: auto;
-            display: block;
-            margin: 10px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            cursor: pointer;
-            transition: transform 0.2s ease;
+        /* ===== CERTIFICADOS ===== */
+        .certificates-section {
+            padding: 20px;
         }
 
-        .certificate-img:hover {
-            transform: scale(1.05);
+        .certificates-title {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .certificates {
-            grid-column: span 2;
+        .pdf-preview {
+            width: 100%;
+            height: 280px; /* tamaño PREVIEW */
+            border: none;
+            border-radius: 6px;
+            margin-top: 10px;
         }
 
         a {
             color: #0073e6;
             text-decoration: none;
-            font-size: 0.9em;
         }
 
         a:hover {
@@ -79,17 +81,29 @@
     <h1>Mis Proyectos de Java</h1>
 </header>
 
+<!-- ===== PROYECTOS ===== -->
 <div class="container">
 
     <div class="project">
         <h3>Proyecto Banco BVVA</h3>
         <p>Versión Online</p>
+        <p>Visión del Cliente</p>
 
-        <iframe src="https://www.youtube.com/embed/Iw03Jp9h6Gs" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/JcJo9lw7t-A" allowfullscreen></iframe>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Iw03Jp9h6Gs"
+            allowfullscreen>
+        </iframe>
+
+        <p>Visión Empleado / Admin</p>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/JcJo9lw7t-A"
+            allowfullscreen>
+        </iframe>
 
         <p>
-            <a href="https://github.com/ByQuasi/Banco-BVVA" target="_blank">
+            <a href="https://github.com/ByQuasi/Banco-BVVA/tree/main/Banco%20BVVA/src/cajeroonline"
+               target="_blank">
                 Ver repositorio en GitHub
             </a>
         </p>
@@ -99,62 +113,98 @@
         <h3>Proyecto Banco BVVA</h3>
         <p>Versión Offline</p>
 
-        <iframe src="https://www.youtube.com/embed/dckNUMXrKVg" allowfullscreen></iframe>
-        <p>Prototipo offline abandonado</p>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/dckNUMXrKVg"
+            allowfullscreen>
+        </iframe>
+
+        <p>Prototipo offline abandonado para pasar a versión online</p>
     </div>
 
     <div class="project">
-        <h3>Buscador de Archivos</h3>
+        <h3>Proyecto Buscador de Archivos</h3>
 
-        <iframe src="https://www.youtube.com/embed/uN0yu7Yyt9E" allowfullscreen></iframe>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/uN0yu7Yyt9E"
+            allowfullscreen>
+        </iframe>
+
+        <p>Busca archivos en base a criterios ingresados</p>
 
         <p>
-            <a href="https://github.com/ByQuasi/Buscador" target="_blank">
+            <a href="https://github.com/ByQuasi/Buscador/blob/main/Buscador/src/main/java/com/mycompany/buscador/NewJFrame2.java"
+               target="_blank">
                 Ver repositorio en GitHub
             </a>
         </p>
     </div>
 
     <div class="project">
-        <h3>Calculadora Científica</h3>
+        <h3>Proyecto Calculadora Científica</h3>
 
-        <iframe src="https://www.youtube.com/embed/4IM7ya8W9sI" allowfullscreen></iframe>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/4IM7ya8W9sI"
+            allowfullscreen>
+        </iframe>
+
+        <p>Calculadora científica en Java</p>
 
         <p>
-            <a href="https://github.com/ByQuasi/Calculador" target="_blank">
+            <a href="https://github.com/ByQuasi/Calculador/blob/main/Calculadora/src/main/java/com/mycompany/calculadora/calculatorA.java"
+               target="_blank">
                 Ver repositorio en GitHub
-            </a>
-        </p>
-    </div>
-
-    <!-- CERTIFICADOS -->
-    <div class="project certificates">
-        <h2>Certificados</h2>
-
-        <h3>Java Developer Certificate</h3>
-        <p>Año: 2024</p>
-
-        <!-- 🔥 IMAGEN PREVIEW -->
-        <a href="java-certificate.jpg" target="_blank">
-            <img src="java-certificate.jpg"
-                 alt="Certificado Java"
-                 class="certificate-img">
-        </a>
-
-        <p>
-            <a href="JAVA_-_Certificacin.pdf" target="_blank">
-                Ver certificado en PDF
             </a>
         </p>
     </div>
 
 </div>
 
+<!-- ===== CERTIFICADOS ===== -->
+<div class="certificates-section">
+
+    <h2 class="certificates-title">Certificados</h2>
+
+    <div class="container">
+
+        <div class="certificate">
+            <h3>Java Developer Certificate</h3>
+            <p>Emitido por: Plataforma X</p>
+            <p>Año: 2024</p>
+
+            <iframe
+                src="JAVA_-_Certificacin.pdf"
+                class="pdf-preview">
+            </iframe>
+
+            <p>
+                <a href="JAVA_-_Certificacin.pdf" target="_blank">
+                    Abrir certificado completo
+                </a>
+            </p>
+        </div>
+
+        <div class="certificate">
+            <h3>Backend Fundamentals Certificate</h3>
+            <p>Emitido por: Plataforma Y</p>
+            <p>Año: 2023</p>
+
+            <iframe
+                src="certificado-backend.pdf"
+                class="pdf-preview">
+            </iframe>
+
+            <p>
+                <a href="certificado-backend.pdf" target="_blank">
+                    Abrir certificado completo
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
-
-
-
 
 
 
