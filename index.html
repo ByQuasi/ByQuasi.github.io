@@ -37,7 +37,26 @@
             border-radius: 5px;
             display: block;
             margin-bottom: 10px;
-        }
+        } 
+        .certificate-link {
+    display: inline-block; /* clic solo sobre la imagen */
+}
+
+.certificate-img {
+    width: 100%;
+    max-width: 300px;   /* tamaño del preview */
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.certificate-img:hover {
+    transform: scale(1.03);
+}
+
     </style>
 </head>
 <body>
@@ -76,6 +95,32 @@
                 </a>
             </p>
         </div>
+        <div class="container">
+    <div class="project">
+        <h3>Java Developer Certificate</h3>
+        <p>Plataforma X · 2024</p>
+
+        <a href="JAVA_-_Certificacin.pdf" target="_blank" class="certificate-link">
+            <img 
+                src="JAVA_-_Certificacin.jpg"
+                alt="Certificado Java"
+                class="certificate-img">
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>Backend Fundamentals</h3>
+        <p>Plataforma Y · 2023</p>
+
+        <a href="backend-certificado.pdf" target="_blank" class="certificate-link">
+            <img 
+                src="backend-certificado.jpg"
+                alt="Certificado Backend"
+                class="certificate-img">
+        </a>
+    </div>
+
+
 
         <div class="project">
             <h3>Proyecto Calculador Cientifica</h3>
@@ -90,6 +135,7 @@
     </div>
 </body>
 </html>
+
 
 
 
