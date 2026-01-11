@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos Java</title>
+    <title>Portfolio Java</title>
 
     <style>
         body {
@@ -16,7 +16,7 @@
         header {
             background-color: #0073e6;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             text-align: center;
         }
 
@@ -25,7 +25,7 @@
             margin: 40px 0 10px;
         }
 
-        /* ===== GRID 2xN ===== */
+        /* ===== GRID FIJO 2 COLUMNAS ===== */
         .container {
             padding: 20px;
             display: grid;
@@ -33,22 +33,23 @@
             gap: 20px;
         }
 
-        .project {
+        .card {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 15px;
         }
 
-        .project h3 {
+        .card h3 {
             margin-top: 0;
         }
 
-        .project iframe {
-            max-width: 100%;
+        iframe {
+            width: 100%;
+            height: 315px;
             border-radius: 5px;
-            display: block;
             margin-bottom: 10px;
+            border: none;
         }
 
         /* ===== CERTIFICADOS ===== */
@@ -81,15 +82,15 @@
 <body>
 
 <header>
-    <h1>Mis Proyectos de Java</h1>
+    <h1>Mi Portfolio Java</h1>
 </header>
 
-<!-- ================= CERTIFICADOS ================= -->
+<!-- ================= CERTIFICADOS (ARRIBA) ================= -->
 <h2 class="section-title">Certificados</h2>
 
 <div class="container">
 
-    <div class="project">
+    <div class="card">
         <h3>Java Developer Certificate</h3>
         <p>Plataforma X · 2024</p>
 
@@ -100,7 +101,7 @@
         </a>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Backend Fundamentals</h3>
         <p>Plataforma Y · 2023</p>
 
@@ -113,19 +114,19 @@
 
 </div>
 
-<!-- ================= PROYECTOS ================= -->
+<!-- ================= PROYECTOS (ABAJO) ================= -->
 <h2 class="section-title">Proyectos</h2>
 
 <div class="container">
 
-    <div class="project">
+    <div class="card">
         <h3>Proyecto Banco BVVA</h3>
-        <p>Version Online</p>
-        <p>Vision del Cliente</p>
+        <p>Versión Online</p>
+        <p>Visión del Cliente</p>
 
         <iframe src="https://www.youtube.com/embed/Iw03Jp9h6Gs" allowfullscreen></iframe>
 
-        <p>Vision de Empleado/Admin</p>
+        <p>Visión Empleado / Admin</p>
 
         <iframe src="https://www.youtube.com/embed/JcJo9lw7t-A" allowfullscreen></iframe>
 
@@ -136,16 +137,16 @@
         </p>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Proyecto Banco BVVA</h3>
-        <p>Version Offline</p>
+        <p>Versión Offline</p>
 
         <iframe src="https://www.youtube.com/embed/dckNUMXrKVg" allowfullscreen></iframe>
 
-        <p>Prototipo offline que abandone para pasar a uno online</p>
+        <p>Prototipo offline que abandoné para pasar a uno online</p>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Proyecto Buscador de Archivos</h3>
 
         <iframe src="https://www.youtube.com/embed/uN0yu7Yyt9E" allowfullscreen></iframe>
@@ -159,12 +160,12 @@
         </p>
     </div>
 
-    <div class="project">
-        <h3>Proyecto Calculador Cientifica</h3>
+    <div class="card">
+        <h3>Proyecto Calculadora Científica</h3>
 
         <iframe src="https://www.youtube.com/embed/4IM7ya8W9sI" allowfullscreen></iframe>
 
-        <p>Calculadora cientifica</p>
+        <p>Calculadora científica</p>
 
         <p>
             <a href="https://github.com/ByQuasi/Calculador/blob/main/Calculadora/src/main/java/com/mycompany/calculadora/calculatorA.java" target="_blank">
