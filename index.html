@@ -20,7 +20,12 @@
             text-align: center;
         }
 
-        /* ===== GRID ORIGINAL (2x2) ===== */
+        h2.section-title {
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        /* ===== GRID 2xN ===== */
         .container {
             padding: 20px;
             display: grid;
@@ -48,7 +53,7 @@
 
         /* ===== CERTIFICADOS ===== */
         .certificate-link {
-            display: inline-block; /* solo la imagen es clickeable */
+            display: inline-block;
         }
 
         .certificate-img {
@@ -65,6 +70,11 @@
         .certificate-img:hover {
             transform: scale(1.03);
         }
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -74,93 +84,9 @@
     <h1>Mis Proyectos de Java</h1>
 </header>
 
-<!-- ================= PROYECTOS ================= -->
-<div class="container">
-
-    <div class="project">
-        <h3>Proyecto Banco BVVA</h3>
-        <p>Version Online</p>
-        <p>Vision del Cliente</p>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/Iw03Jp9h6Gs"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <p>Vision de Empleado/Admin</p>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/JcJo9lw7t-A"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <p>
-            <a href="https://github.com/ByQuasi/Banco-BVVA/tree/main/Banco%20BVVA/src/cajeroonline"
-               target="_blank"
-               style="color: black; text-decoration: underline;">
-                Ver repositorio en GitHub
-            </a>
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>Proyecto Banco BVVA</h3>
-        <p>Version Offline</p>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/dckNUMXrKVg"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <p>Prototipo offline que abandone para pasar a uno online</p>
-    </div>
-
-    <div class="project">
-        <h3>Proyecto Buscador de Archivos</h3>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/uN0yu7Yyt9E"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <p>Busca archivos en base a lo que le pidas</p>
-
-        <p>
-            <a href="https://github.com/ByQuasi/Buscador/blob/main/Buscador/src/main/java/com/mycompany/buscador/NewJFrame2.java"
-               target="_blank"
-               style="color: black; text-decoration: underline;">
-                Ver repositorio en GitHub
-            </a>
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>Proyecto Calculador Cientifica</h3>
-
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4IM7ya8W9sI"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <p>Calculadora cientifica</p>
-
-        <p>
-            <a href="https://github.com/ByQuasi/Calculador/blob/main/Calculadora/src/main/java/com/mycompany/calculadora/calculatorA.java"
-               target="_blank"
-               style="color: black; text-decoration: underline;">
-                Ver repositorio en GitHub
-            </a>
-        </p>
-    </div>
-
-</div>
-
 <!-- ================= CERTIFICADOS ================= -->
+<h2 class="section-title">Certificados</h2>
+
 <div class="container">
 
     <div class="project">
@@ -187,9 +113,70 @@
 
 </div>
 
+<!-- ================= PROYECTOS ================= -->
+<h2 class="section-title">Proyectos</h2>
+
+<div class="container">
+
+    <div class="project">
+        <h3>Proyecto Banco BVVA</h3>
+        <p>Version Online</p>
+        <p>Vision del Cliente</p>
+
+        <iframe src="https://www.youtube.com/embed/Iw03Jp9h6Gs" allowfullscreen></iframe>
+
+        <p>Vision de Empleado/Admin</p>
+
+        <iframe src="https://www.youtube.com/embed/JcJo9lw7t-A" allowfullscreen></iframe>
+
+        <p>
+            <a href="https://github.com/ByQuasi/Banco-BVVA/tree/main/Banco%20BVVA/src/cajeroonline" target="_blank">
+                Ver repositorio en GitHub
+            </a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Proyecto Banco BVVA</h3>
+        <p>Version Offline</p>
+
+        <iframe src="https://www.youtube.com/embed/dckNUMXrKVg" allowfullscreen></iframe>
+
+        <p>Prototipo offline que abandone para pasar a uno online</p>
+    </div>
+
+    <div class="project">
+        <h3>Proyecto Buscador de Archivos</h3>
+
+        <iframe src="https://www.youtube.com/embed/uN0yu7Yyt9E" allowfullscreen></iframe>
+
+        <p>Busca archivos en base a lo que le pidas</p>
+
+        <p>
+            <a href="https://github.com/ByQuasi/Buscador/blob/main/Buscador/src/main/java/com/mycompany/buscador/NewJFrame2.java" target="_blank">
+                Ver repositorio en GitHub
+            </a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Proyecto Calculador Cientifica</h3>
+
+        <iframe src="https://www.youtube.com/embed/4IM7ya8W9sI" allowfullscreen></iframe>
+
+        <p>Calculadora cientifica</p>
+
+        <p>
+            <a href="https://github.com/ByQuasi/Calculador/blob/main/Calculadora/src/main/java/com/mycompany/calculadora/calculatorA.java" target="_blank">
+                Ver repositorio en GitHub
+            </a>
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
-
 
 
 
